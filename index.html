@@ -1,12 +1,172 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقعي</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Landing</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --main: #00c853;
+  --bg: #f5f5f5;
+  --card: #ffffff;
+  --text: #111;
+}
+
+body.dark {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease;
+}
+
+.app-icon {
+  width: 120px;
+  border-radius: 25px;
+}
+
+.app-info h1 {
+  margin: 0;
+}
+
+.short-desc {
+  color: gray;
+}
+
+.btn {
+  background: var(--main);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.section {
+  background: var(--card);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  animation: slideUp 1s ease;
+}
+
+.screenshots {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.screenshots img {
+  width: 200px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.screenshots img:hover {
+  transform: scale(1.1);
+}
+
+.toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  background: var(--card);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(-20px);} 
+  to {opacity:1; transform: translateY(0);} 
+}
+
+@keyframes slideUp {
+  from {opacity:0; transform: translateY(40px);} 
+  to {opacity:1; transform: translateY(0);} 
+}
+
+</style>
 </head>
+
 <body>
-  <h1>مرحبا بكم في موقعي</h1>
-  <p>الموقع يعمل بنجاح على GitHub Pages 🎉</p>
+
+<div class="toggle" onclick="toggleMode()">🌙</div>
+
+<div class="container">
+
+<div class="header">
+  <img src="https://l.top4top.io/p_37628a80d0.jpeg" class="app-icon">
+  <div class="app-info">
+    <H1>Tkmaxx</h1>
+    <div class="short-desc">Shop great deals from top brands at TK Maxx. Women's and men's fashion, designer brands</div>
+    <a href="https://apk.e-droid.net/apk/app2643307-uv1fok.apk?v=15" class="btn"> Download Apk</a>
+  </div>
+</div>
+
+<div class="section"> App
+  description </h2>
+  <p>WELCOME TO THE HOME OF BIG DEALS At TK Maxx we believe in big labels at small prices, that’s why our buyers scour the globe for the best brands and designers, and you could find gems for up to 60% less than the RRP. What’s more, you can get everything under one roof (yes, really) from homeware to women’s fashion, and beauty to suitcases. And it's not just brands, we have high-street heroes and unique finds to suit every taste and budget. Chances are you’ll find something totally unique, at the quality you deserve. WHY DOWNLOAD THE APP? Discover savvy shopping on-the-go. With the TK Maxx app in your pocket, you’ll have a whole world of big labels at small prices right at your fingertips. You’ll be the first to hear about new deliveries to tkmaxx.com, Clearance and more. Plus, all your online purchases will be in one place so you can track orders quickly and easily. TREASURE REWARDS Get rewarded just for shopping with our loyalty programme, Treasure. With each shop you earn a key, earn five keys and you can select a fabulous reward or enter one of our amazing competitions. Plus, Treasure members receive a weekly 'Early Access' email, showing you the latest big-brand deals 48 hours before anyone else! On the app, for the first time, you can see all your Treasure keys in one place and easily access your account. FASHION LOVERS, THIS IS FOR YOU We think everyone should be able to express their personal style through fashion – whatever your budget. From high-street heroes to luxe labels, we’ve got on-trend fashion to help you look and feel your most stylish self. TK MAXX LOVES GIFTS We’re known for being the best place to find the perfect gifts for everyone on your list. From posh scented candles for the luxury lover, to men’s accessories he’ll wear forever. You can even get a prezzie for your pet! ..
+  </p>
+</div>
+
+<div class="section">
+  <h2> Screenshots
+  <div class="screenshots">
+    <img src="https://a.top4top.io/p_3762a69kl1.jpg">
+    <img src="https://b.top4top.io/p_37627p6pw2.jpg">
+    <img src="https://c.top4top.io/p_3762rbhmk3.jpg">
+    <img src="https://d.top4top.io/p_37621xccq4.jpg">
+    <img src="https://e.top4top.io/p_37620nt0w5.jpg">
+    <img src="https://f.top4top.io/p_37628qfk96.jpg">
+  </div>
+</div>
+
+<div class="section">
+  <h2>Download now </h2>
+  <a href="https://apk.e-droid.net/apk/app2643307-uv1fok.apk?v=15" class="btn">Download APK </a>
+</div>
+
+</div>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle("dark");
+}
+</script>
+
 </body>
 </html>
